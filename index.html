@@ -11,6 +11,7 @@
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-tap-highlight-color: transparent;
         }
         .hero-gradient {
             background: linear-gradient(135deg, #0B1F3A 0%, #1a365d 100%);
@@ -18,235 +19,237 @@
         .text-glow {
             text-shadow: 0 0 20px rgba(255, 193, 7, 0.3);
         }
+        /* Mengatur agar teks tidak pecah di mobile */
+        h1, h2 {
+            word-break: keep-all;
+            overflow-wrap: break-word;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-slate-900 overflow-x-hidden">
 
     <!-- NAVIGATION BAR -->
-    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 md:py-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
-                <div class="w-10 h-10 bg-[#0B1F3A] rounded-lg flex items-center justify-center text-white font-bold">D</div>
-                <span class="font-bold text-xl tracking-tight">Disaproplus</span>
+                <div class="w-8 h-8 md:w-10 md:h-10 bg-[#0B1F3A] rounded-lg flex items-center justify-center text-white font-bold text-sm md:text-base">D</div>
+                <span class="font-bold text-lg md:text-xl tracking-tight">Disaproplus</span>
             </div>
-            <a href="https://wa.me/6285119901075?text=saya%20minat%20dan%20bersedia%20ikut%20program%20intership" target="_blank" class="bg-[#0B1F3A] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-slate-800 transition-all">Daftar Sekarang</a>
+            <a href="https://wa.me/6285119901075?text=saya%20minat%20dan%20bersedia%20ikut%20program%20intership" target="_blank" class="bg-[#0B1F3A] text-white px-4 py-2 rounded-full text-xs md:text-sm font-semibold hover:bg-slate-800 transition-all">Daftar</a>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <header class="hero-gradient text-white pt-20 pb-32 px-4 relative overflow-hidden">
+    <header class="hero-gradient text-white pt-12 pb-24 md:pt-20 md:pb-32 px-4 relative overflow-hidden text-center">
         <!-- Decoration circles -->
-        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -mr-48 -mt-48"></div>
-        <div class="absolute bottom-0 left-0 w-64 h-64 bg-yellow-500/10 rounded-full blur-3xl -ml-32 -mb-32"></div>
+        <div class="absolute top-0 right-0 w-64 h-64 md:w-96 md:h-96 bg-blue-500/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+        <div class="absolute bottom-0 left-0 w-48 h-48 md:w-64 md:h-64 bg-yellow-500/10 rounded-full blur-3xl -ml-24 -mb-24"></div>
 
-        <div class="max-w-4xl mx-auto text-center relative z-10">
-            <div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-yellow-400/20 border border-yellow-400/30 text-yellow-400 text-sm font-bold uppercase tracking-widest">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="inline-block px-3 py-1 mb-6 rounded-full bg-yellow-400/20 border border-yellow-400/30 text-yellow-400 text-[10px] md:text-xs font-bold uppercase tracking-widest">
                 Kesempatan Terbatas
             </div>
-            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+            <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight mb-6 px-2">
                 Dari Siswa SMK Jadi <span class="text-yellow-400 text-glow">Siap Kerja & Berpenghasilan</span> Dalam 90 Hari
             </h1>
-            <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+            <p class="text-base md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed px-4">
                 Tanpa pengalaman kerja? Bingung mau kemana setelah lulus? Kami bimbing langsung di industri Properti & Digital Marketing.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://wa.me/6285119901075?text=saya%20minat%20dan%20bersedia%20ikut%20program%20intership" target="_blank" class="bg-yellow-400 hover:bg-yellow-500 text-[#0B1F3A] px-10 py-4 rounded-xl font-extrabold text-lg shadow-lg shadow-yellow-400/20 transform hover:-translate-y-1 transition-all">
-                    AMANKAN SLOT SAYA SEKARANG
+            <div class="flex flex-col sm:flex-row gap-4 justify-center px-4">
+                <a href="https://wa.me/6285119901075?text=saya%20minat%20dan%20bersedia%20ikut%20program%20intership" target="_blank" class="bg-yellow-400 hover:bg-yellow-500 text-[#0B1F3A] px-8 py-4 rounded-xl font-extrabold text-base md:text-lg shadow-lg shadow-yellow-400/20 transform active:scale-95 transition-all w-full sm:w-auto">
+                    AMANKAN SLOT SAYA
                 </a>
             </div>
-            <div class="mt-12 flex flex-wrap justify-center gap-8 text-sm text-slate-400 italic">
+            <div class="mt-12 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-xs md:text-sm text-slate-400 italic">
                 <span class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400"></i> No Experience Required</span>
                 <span class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400"></i> 100% Practical Learning</span>
-                <span class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400"></i> Industry Expert Mentors</span>
+                <span class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400"></i> Expert Mentors</span>
             </div>
         </div>
     </header>
 
     <!-- TRUST BADGE -->
-    <div class="max-w-5xl mx-auto -mt-12 px-4 relative z-20">
-        <div class="bg-white p-8 rounded-2xl shadow-xl grid grid-cols-2 md:grid-cols-4 gap-6 items-center border border-gray-100">
+    <div class="max-w-5xl mx-auto -mt-8 md:-mt-12 px-4 relative z-20">
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 items-center border border-gray-100">
             <div class="text-center">
-                <p class="text-xs text-slate-400 uppercase font-bold mb-1">Collaboration</p>
-                <p class="font-bold text-slate-800">Arcadia Townhouse</p>
+                <p class="text-[10px] text-slate-400 uppercase font-bold mb-1">Collaboration</p>
+                <p class="font-bold text-slate-800 text-xs md:text-sm">Arcadia Townhouse</p>
             </div>
             <div class="text-center border-l border-gray-100">
-                <p class="text-xs text-slate-400 uppercase font-bold mb-1">Focus</p>
-                <p class="font-bold text-slate-800 text-sm">Property Marketing</p>
+                <p class="text-[10px] text-slate-400 uppercase font-bold mb-1">Focus</p>
+                <p class="font-bold text-slate-800 text-xs md:text-sm">Property Marketing</p>
             </div>
             <div class="text-center border-l border-gray-100">
-                <p class="text-xs text-slate-400 uppercase font-bold mb-1">Duration</p>
-                <p class="font-bold text-slate-800">90 Days Program</p>
+                <p class="text-[10px] text-slate-400 uppercase font-bold mb-1">Duration</p>
+                <p class="font-bold text-slate-800 text-xs md:text-sm">90 Days Program</p>
             </div>
             <div class="text-center border-l border-gray-100">
-                <p class="text-xs text-slate-400 uppercase font-bold mb-1">Benefit</p>
-                <p class="font-bold text-slate-800">Income + Certificate</p>
+                <p class="text-[10px] text-slate-400 uppercase font-bold mb-1">Benefit</p>
+                <p class="font-bold text-slate-800 text-xs md:text-sm">Income + Cert.</p>
             </div>
         </div>
     </div>
 
     <!-- PROBLEM SECTION -->
-    <section class="py-24 px-4 bg-white">
+    <section class="py-16 md:py-24 px-4 bg-white">
         <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Masih Bingung Setelah Lulus?</h2>
-                <div class="w-20 h-1.5 bg-yellow-400 mx-auto rounded-full"></div>
+            <div class="text-center mb-12 md:成就-16">
+                <h2 class="text-2xl md:text-4xl font-bold text-slate-900 mb-4 px-4">Masih Bingung Setelah Lulus?</h2>
+                <div class="w-16 md:w-20 h-1.5 bg-yellow-400 mx-auto rounded-full"></div>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 group hover:bg-white hover:shadow-xl transition-all">
-                    <div class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center text-red-600 mb-6 group-hover:scale-110 transition-transform">
-                        <i data-lucide="frown" class="w-8 h-8"></i>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <div class="p-6 md:p-8 rounded-2xl bg-slate-50 border border-slate-100 group">
+                    <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center text-red-600 mb-6">
+                        <i data-lucide="frown" class="w-6 h-6 md:w-8 md:h-8"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Nol Pengalaman</h3>
-                    <p class="text-slate-600">Perusahaan selalu minta pengalaman 1-2 tahun? Di sini kami berikan pengalaman nyata.</p>
+                    <h3 class="text-lg md:text-xl font-bold mb-3">Nol Pengalaman</h3>
+                    <p class="text-sm md:text-base text-slate-600">Perusahaan selalu minta pengalaman 1-2 tahun? Di sini kami berikan pengalaman nyata.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 group hover:bg-white hover:shadow-xl transition-all">
-                    <div class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 mb-6 group-hover:scale-110 transition-transform">
-                        <i data-lucide="compass" class="w-8 h-8"></i>
+                <div class="p-6 md:p-8 rounded-2xl bg-slate-50 border border-slate-100 group">
+                    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 mb-6">
+                        <i data-lucide="compass" class="w-6 h-6 md:w-8 md:h-8"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Tanpa Arah</h3>
-                    <p class="text-slate-600">Tidak tahu harus melamar kemana atau skill apa yang laku di industri saat ini.</p>
+                    <h3 class="text-lg md:text-xl font-bold mb-3">Tanpa Arah</h3>
+                    <p class="text-sm md:text-base text-slate-600">Tidak tahu harus melamar kemana atau skill apa yang laku di industri saat ini.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 group hover:bg-white hover:shadow-xl transition-all">
-                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-6 group-hover:scale-110 transition-transform">
-                        <i data-lucide="trending-down" class="w-8 h-8"></i>
+                <div class="p-6 md:p-8 rounded-2xl bg-slate-50 border border-slate-100 group">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-6">
+                        <i data-lucide="trending-down" class="w-6 h-6 md:w-8 md:h-8"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Kalah Saing</h3>
-                    <p class="text-slate-600">Merasa kemampuan pas-pasan dan takut tertinggal dari ribuan lulusan lainnya.</p>
+                    <h3 class="text-lg md:text-xl font-bold mb-3">Kalah Saing</h3>
+                    <p class="text-sm md:text-base text-slate-600">Merasa kemampuan pas-pasan dan takut tertinggal dari ribuan lulusan lainnya.</p>
                 </div>
             </div>
 
-            <div class="mt-16 p-8 bg-[#0B1F3A] text-white rounded-3xl text-center">
-                <p class="text-xl md:text-2xl font-semibold italic">"Bukan salah Anda. Anda hanya belum mendapatkan jembatan yang tepat menuju dunia kerja profesional."</p>
+            <div class="mt-12 p-6 md:p-8 bg-[#0B1F3A] text-white rounded-2xl md:rounded-3xl text-center">
+                <p class="text-lg md:text-2xl font-semibold italic">"Bukan salah Anda. Anda hanya belum mendapatkan jembatan yang tepat menuju dunia kerja profesional."</p>
             </div>
         </div>
     </section>
 
     <!-- SOLUTION SECTION -->
-    <section class="py-24 px-4 bg-slate-50">
-        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
-            <div class="flex-1">
-                <span class="text-yellow-600 font-bold uppercase tracking-widest text-sm">Solusi Kami</span>
-                <h2 class="text-4xl font-bold mt-2 mb-6">Program Internship & Beasiswa Profesional</h2>
-                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+    <section class="py-16 md:py-24 px-4 bg-slate-50">
+        <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10 md:gap-12">
+            <div class="flex-1 text-center lg:text-left">
+                <span class="text-yellow-600 font-bold uppercase tracking-widest text-[10px] md:text-sm">Solusi Kami</span>
+                <h2 class="text-2xl md:text-4xl font-bold mt-2 mb-6">Program Internship & Beasiswa Profesional</h2>
+                <p class="text-sm md:text-lg text-slate-600 mb-8 leading-relaxed">
                     Kami menggabungkan pendidikan beasiswa dengan magang intensif di sektor properti dan digital marketing. Anda tidak hanya belajar teori di kelas, tapi langsung mengelola leads nyata.
                 </p>
-                <div class="space-y-4">
-                    <div class="flex items-start gap-4">
-                        <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white flex-shrink-0 mt-1">
-                            <i data-lucide="check" class="w-4 h-4"></i>
+                <div class="space-y-4 text-left inline-block lg:block">
+                    <div class="flex items-start gap-3">
+                        <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center text-white flex-shrink-0 mt-1">
+                            <i data-lucide="check" class="w-3 h-3"></i>
                         </div>
-                        <p class="font-medium">Mentoring langsung oleh CEO & Manager Berpengalaman</p>
+                        <p class="font-medium text-sm md:text-base">Mentoring langsung oleh Ahli Properti</p>
                     </div>
-                    <div class="flex items-start gap-4">
-                        <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white flex-shrink-0 mt-1">
-                            <i data-lucide="check" class="w-4 h-4"></i>
+                    <div class="flex items-start gap-3">
+                        <div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center text-white flex-shrink-0 mt-1">
+                            <i data-lucide="check" class="w-3 h-3"></i>
                         </div>
-                        <p class="font-medium">Akses alat Digital Marketing Premium</p>
+                        <p class="font-medium text-sm md:text-base">Akses alat Digital Marketing Premium</p>
                     </div>
                 </div>
             </div>
-            <div class="flex-1 w-full">
-                <div class="bg-white p-3 rounded-3xl shadow-2xl border border-gray-100 rotate-2 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800&q=80" 
+            <div class="flex-1 w-full max-w-md lg:max-w-none">
+                <div class="bg-white p-2 rounded-2xl shadow-xl border border-gray-100 md:rotate-2 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800" 
                          alt="Training Digital Marketing" 
-                         class="rounded-2xl w-full h-auto object-cover aspect-video"
-                         onerror="this.src='https://via.placeholder.com/800x450?text=Training+Session'">
+                         class="rounded-xl w-full h-auto object-cover aspect-video shadow-inner">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- VALUE TABLE -->
-    <section class="py-24 px-4 bg-white">
+    <section class="py-16 md:py-24 px-4 bg-white">
         <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 uppercase tracking-tighter">Investasi Senilai <span class="text-blue-600">Rp12.000.000+</span></h2>
-                <p class="text-slate-500">Semua yang Anda butuhkan untuk sukses karir ada di sini.</p>
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-4xl font-bold mb-4 uppercase tracking-tighter">Investasi Senilai <span class="text-blue-600">Rp12.000.000+</span></h2>
+                <p class="text-sm text-slate-500 px-4">Semua yang Anda butuhkan untuk sukses karir ada di sini.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div class="border border-slate-200 p-6 rounded-2xl text-center">
-                    <p class="text-sm font-bold text-slate-400 mb-2">Training</p>
-                    <h4 class="font-bold text-lg mb-1 leading-tight">Digital Marketing Mastery</h4>
-                    <p class="text-blue-600 font-black">Rp3.000.000</p>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
+                <div class="border border-slate-100 p-4 md:p-6 rounded-xl text-center bg-slate-50/50">
+                    <p class="text-[9px] font-bold text-slate-400 mb-2 uppercase">Training</p>
+                    <h4 class="font-bold text-xs md:text-base mb-1 leading-tight">Digital Marketing</h4>
+                    <p class="text-blue-600 font-black text-xs md:text-sm">Rp3.000.000</p>
                 </div>
-                <div class="border border-slate-200 p-6 rounded-2xl text-center">
-                    <p class="text-sm font-bold text-slate-400 mb-2">Mentoring</p>
-                    <h4 class="font-bold text-lg mb-1 leading-tight">Professional Mentoring</h4>
-                    <p class="text-blue-600 font-black">Rp5.000.000</p>
+                <div class="border border-slate-100 p-4 md:p-6 rounded-xl text-center bg-slate-50/50">
+                    <p class="text-[9px] font-bold text-slate-400 mb-2 uppercase">Mentoring</p>
+                    <h4 class="font-bold text-xs md:text-base mb-1 leading-tight">Professional Mentoring</h4>
+                    <p class="text-blue-600 font-black text-xs md:text-sm">Rp5.000.000</p>
                 </div>
-                <div class="border border-slate-200 p-6 rounded-2xl text-center">
-                    <p class="text-sm font-bold text-slate-400 mb-2">Resource</p>
-                    <h4 class="font-bold text-lg mb-1 leading-tight">Akses Leads & Closing</h4>
-                    <p class="text-blue-600 font-black">Rp2.500.000</p>
+                <div class="border border-slate-100 p-4 md:p-6 rounded-xl text-center bg-slate-50/50">
+                    <p class="text-[9px] font-bold text-slate-400 mb-2 uppercase">Resource</p>
+                    <h4 class="font-bold text-xs md:text-base mb-1 leading-tight">Akses Leads</h4>
+                    <p class="text-blue-600 font-black text-xs md:text-sm">Rp2.500.000</p>
                 </div>
-                <div class="border border-slate-200 p-6 rounded-2xl text-center">
-                    <p class="text-sm font-bold text-slate-400 mb-2">Credentials</p>
-                    <h4 class="font-bold text-lg mb-1 leading-tight">Sertifikat & Portofolio</h4>
-                    <p class="text-blue-600 font-black">Rp1.500.000</p>
+                <div class="border border-slate-100 p-4 md:p-6 rounded-xl text-center bg-slate-50/50">
+                    <p class="text-[9px] font-bold text-slate-400 mb-2 uppercase">Credentials</p>
+                    <h4 class="font-bold text-xs md:text-base mb-1 leading-tight">Sertifikat Portofolio</h4>
+                    <p class="text-blue-600 font-black text-xs md:text-sm">Rp1.500.000</p>
                 </div>
             </div>
 
-            <div class="mt-12 bg-yellow-400 p-10 rounded-3xl text-center transform hover:scale-[1.02] transition-transform">
-                <h3 class="text-3xl font-black text-[#0B1F3A] mb-4 uppercase">SEMUANYA Rp 0,- (GRATIS)</h3>
-                <p class="text-[#0B1F3A] text-lg font-bold">Khusus Untuk Anda Yang Lolos Seleksi + Dapat Komisi Tak Terbatas!</p>
+            <div class="mt-10 bg-yellow-400 p-6 md:p-10 rounded-2xl md:rounded-3xl text-center shadow-lg">
+                <h3 class="text-xl md:text-3xl font-black text-[#0B1F3A] mb-2 md:mb-4 uppercase">SEMUANYA Rp 0,- (GRATIS)</h3>
+                <p class="text-[#0B1F3A] text-xs md:text-lg font-bold">Khusus Peserta Terpilih + Bonus Komisi Penjualan!</p>
             </div>
         </div>
     </section>
 
     <!-- TIMELINE SECTION -->
-    <section class="py-24 px-4 bg-slate-900 text-white overflow-hidden relative">
+    <section class="py-16 md:py-24 px-4 bg-slate-900 text-white overflow-hidden relative">
         <div class="max-w-5xl mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-20">Transformasi 90 Hari</h2>
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12 md:mb-20">Transformasi 90 Hari</h2>
             
-            <div class="relative">
-                <!-- Line -->
-                <div class="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-slate-700 hidden md:block"></div>
+            <div class="relative space-y-12">
+                <!-- Simple Vertical Line for all screens -->
+                <div class="absolute left-4 md:left-1/2 top-0 h-full w-0.5 bg-slate-700 -translate-x-1/2"></div>
 
-                <div class="space-y-16">
-                    <!-- Step 1 -->
-                    <div class="relative flex flex-col md:flex-row items-center md:gap-24 group">
-                        <div class="md:w-1/2 text-center md:text-right">
-                            <span class="text-yellow-400 font-black text-6xl opacity-20 group-hover:opacity-100 transition-opacity">07</span>
-                            <h4 class="text-2xl font-bold mt-2">Mulai Praktek</h4>
-                            <p class="text-slate-400 mt-2">Orientasi industri dan langsung terjun memahami alur bisnis real properti.</p>
-                        </div>
-                        <div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-yellow-400 rounded-full shadow-[0_0_15px_rgba(250,204,21,0.5)] z-10 hidden md:block"></div>
-                        <div class="md:w-1/2"></div>
+                <!-- Step 1 -->
+                <div class="relative flex flex-row md:flex-row items-start md:items-center gap-8 md:gap-24 group">
+                    <div class="hidden md:block md:w-1/2"></div>
+                    <div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 bg-yellow-400 rounded-full shadow-[0_0_10px_rgba(250,204,21,0.6)] z-10"></div>
+                    <div class="pl-10 md:pl-0 md:w-1/2 text-left">
+                        <span class="text-yellow-400 font-black text-4xl md:text-6xl opacity-30">07</span>
+                        <h4 class="text-lg md:text-2xl font-bold">Mulai Praktek</h4>
+                        <p class="text-sm md:text-base text-slate-400 mt-1">Orientasi industri dan memahami alur bisnis real properti.</p>
                     </div>
+                </div>
 
-                    <!-- Step 2 -->
-                    <div class="relative flex flex-col md:flex-row-reverse items-center md:gap-24 group">
-                        <div class="md:w-1/2 text-center md:text-left">
-                            <span class="text-yellow-400 font-black text-6xl opacity-20 group-hover:opacity-100 transition-opacity">14</span>
-                            <h4 class="text-2xl font-bold mt-2">Pengalaman Nyata</h4>
-                            <p class="text-slate-400 mt-2">Mulai mengelola prospek dan kampanye digital di bawah pengawasan ketat mentor.</p>
-                        </div>
-                        <div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-yellow-400 rounded-full shadow-[0_0_15px_rgba(250,204,21,0.5)] z-10 hidden md:block"></div>
-                        <div class="md:w-1/2"></div>
+                <!-- Step 2 -->
+                <div class="relative flex flex-row md:flex-row-reverse items-start md:items-center gap-8 md:gap-24 group">
+                    <div class="hidden md:block md:w-1/2"></div>
+                    <div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 bg-yellow-400 rounded-full shadow-[0_0_10px_rgba(250,204,21,0.6)] z-10"></div>
+                    <div class="pl-10 md:pl-0 md:w-1/2 text-left md:text-right">
+                        <span class="text-yellow-400 font-black text-4xl md:text-6xl opacity-30">14</span>
+                        <h4 class="text-lg md:text-2xl font-bold">Pengalaman Nyata</h4>
+                        <p class="text-sm md:text-base text-slate-400 mt-1">Mengelola prospek dan kampanye digital di bawah mentor.</p>
                     </div>
+                </div>
 
-                    <!-- Step 3 -->
-                    <div class="relative flex flex-col md:flex-row items-center md:gap-24 group">
-                        <div class="md:w-1/2 text-center md:text-right">
-                            <span class="text-yellow-400 font-black text-6xl opacity-20 group-hover:opacity-100 transition-opacity">30</span>
-                            <h4 class="text-2xl font-bold mt-2">Mulai Closing</h4>
-                            <p class="text-slate-400 mt-2">Kesempatan mencetak penjualan pertama dan mendapatkan komisi pertama Anda.</p>
-                        </div>
-                        <div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-yellow-400 rounded-full shadow-[0_0_15px_rgba(250,204,21,0.5)] z-10 hidden md:block"></div>
-                        <div class="md:w-1/2"></div>
+                <!-- Step 3 -->
+                <div class="relative flex flex-row md:flex-row items-start md:items-center gap-8 md:gap-24 group">
+                    <div class="hidden md:block md:w-1/2"></div>
+                    <div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 bg-yellow-400 rounded-full shadow-[0_0_10px_rgba(250,204,21,0.6)] z-10"></div>
+                    <div class="pl-10 md:pl-0 md:w-1/2 text-left">
+                        <span class="text-yellow-400 font-black text-4xl md:text-6xl opacity-30">30</span>
+                        <h4 class="text-lg md:text-2xl font-bold">Mulai Closing</h4>
+                        <p class="text-sm md:text-base text-slate-400 mt-1">Kesempatan mencetak penjualan dan komisi pertama.</p>
                     </div>
+                </div>
 
-                    <!-- Step 4 -->
-                    <div class="relative flex flex-col md:flex-row-reverse items-center md:gap-24 group">
-                        <div class="md:w-1/2 text-center md:text-left">
-                            <span class="text-yellow-400 font-black text-6xl opacity-20 group-hover:opacity-100 transition-opacity">90</span>
-                            <h4 class="text-2xl font-bold mt-2">Siap Kerja</h4>
-                            <p class="text-slate-400 mt-2">Lulus dengan portofolio kuat dan siap disalurkan atau direkrut tim internal kami.</p>
-                        </div>
-                        <div class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-yellow-400 rounded-full shadow-[0_0_15px_rgba(250,204,21,0.5)] z-10 hidden md:block"></div>
-                        <div class="md:w-1/2"></div>
+                <!-- Step 4 -->
+                <div class="relative flex flex-row md:flex-row-reverse items-start md:items-center gap-8 md:gap-24 group">
+                    <div class="hidden md:block md:w-1/2"></div>
+                    <div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 bg-yellow-400 rounded-full shadow-[0_0_10px_rgba(250,204,21,0.6)] z-10"></div>
+                    <div class="pl-10 md:pl-0 md:w-1/2 text-left md:text-right">
+                        <span class="text-yellow-400 font-black text-4xl md:text-6xl opacity-30">90</span>
+                        <h4 class="text-lg md:text-2xl font-bold">Siap Kerja</h4>
+                        <p class="text-sm md:text-base text-slate-400 mt-1">Lulus dengan portofolio kuat dan siap disalurkan kerja.</p>
                     </div>
                 </div>
             </div>
@@ -254,34 +257,34 @@
     </section>
 
     <!-- TESTIMONIALS -->
-    <section class="py-24 px-4 bg-white overflow-hidden">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Apa Kata Peserta Sebelumnya?</h2>
+    <section class="py-16 md:py-24 px-4 bg-white overflow-hidden">
+        <div class="max-w-5xl mx-auto text-center lg:text-left">
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-12">Kata Peserta</h2>
             
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 relative">
-                    <i data-lucide="quote" class="w-10 h-10 text-yellow-400 mb-6 opacity-40"></i>
-                    <p class="text-lg italic text-slate-700 mb-8">"Gak nyangka banget, baru 3 minggu magang sudah bisa closing satu unit. Bimbingannya benar-benar intens dan detail."</p>
-                    <div class="flex items-center gap-4">
-                        <div class="w-14 h-14 bg-slate-300 rounded-full overflow-hidden border-2 border-white shadow-md">
-                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=150&h=150" alt="Aditya Ramadhan" class="w-full h-full object-cover">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-50 p-6 md:p-8 rounded-2xl border border-slate-100 relative">
+                    <i data-lucide="quote" class="w-6 h-6 md:w-8 md:h-8 text-yellow-400 mb-4 opacity-40 mx-auto md:mx-0"></i>
+                    <p class="text-sm md:text-lg italic text-slate-700 mb-6">"Gak nyangka banget, baru 3 minggu magang sudah bisa closing satu unit. Bimbingannya benar-benar detail."</p>
+                    <div class="flex items-center justify-center lg:justify-start gap-4">
+                        <div class="w-10 h-10 md:w-12 md:h-12 bg-slate-300 rounded-full overflow-hidden border-2 border-white">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=150&h=150" alt="Aditya" class="w-full h-full object-cover">
                         </div>
-                        <div>
-                            <p class="font-bold">Aditya Ramadhan</p>
-                            <p class="text-sm text-slate-500">Lulusan SMK 2023</p>
+                        <div class="text-left">
+                            <p class="font-bold text-sm md:text-base">Aditya Ramadhan</p>
+                            <p class="text-[10px] md:text-xs text-slate-500 uppercase font-bold tracking-tight">Lulusan SMK 2023</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 relative">
-                    <i data-lucide="quote" class="w-10 h-10 text-yellow-400 mb-6 opacity-40"></i>
-                    <p class="text-lg italic text-slate-700 mb-8">"Dulu bingung mau kerja apa, sekarang saya punya skill digital marketing yang kepakai banget. Berasa lebih percaya diri."</p>
-                    <div class="flex items-center gap-4">
-                        <div class="w-14 h-14 bg-slate-300 rounded-full overflow-hidden border-2 border-white shadow-md">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150" alt="Siska Amelia" class="w-full h-full object-cover">
+                <div class="bg-slate-50 p-6 md:p-8 rounded-2xl border border-slate-100 relative">
+                    <i data-lucide="quote" class="w-6 h-6 md:w-8 md:h-8 text-yellow-400 mb-4 opacity-40 mx-auto md:mx-0"></i>
+                    <p class="text-sm md:text-lg italic text-slate-700 mb-6">"Dulu bingung mau kerja apa, sekarang punya skill digital marketing yang kepakai banget. Berasa percaya diri."</p>
+                    <div class="flex items-center justify-center lg:justify-start gap-4">
+                        <div class="w-10 h-10 md:w-12 md:h-12 bg-slate-300 rounded-full overflow-hidden border-2 border-white">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150" alt="Siska" class="w-full h-full object-cover">
                         </div>
-                        <div>
-                            <p class="font-bold">Siska Amelia</p>
-                            <p class="text-sm text-slate-500">Lulusan SMK 2023</p>
+                        <div class="text-left">
+                            <p class="font-bold text-sm md:text-base">Siska Amelia</p>
+                            <p class="text-[10px] md:text-xs text-slate-500 uppercase font-bold tracking-tight">Lulusan SMK 2023</p>
                         </div>
                     </div>
                 </div>
@@ -291,74 +294,75 @@
 
     <!-- GUARANTEE -->
     <section class="py-12 px-4">
-        <div class="max-w-3xl mx-auto bg-green-50 border-2 border-dashed border-green-200 p-8 rounded-3xl flex flex-col md:flex-row items-center gap-6">
-            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center text-green-600 flex-shrink-0">
-                <i data-lucide="shield-check" class="w-10 h-10"></i>
+        <div class="max-w-3xl mx-auto bg-green-50 border-2 border-dashed border-green-200 p-6 md:p-8 rounded-2xl md:rounded-3xl flex flex-col md:flex-row items-center gap-6">
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-green-100 rounded-full flex items-center justify-center text-green-600 flex-shrink-0">
+                <i data-lucide="shield-check" class="w-8 h-8 md:w-10 md:h-10"></i>
             </div>
-            <div>
-                <h3 class="text-xl font-bold text-green-900">Garansi "No-Risk" Kami</h3>
-                <p class="text-green-800 leading-relaxed">Kami berkomitmen membimbing Anda sampai bisa. Jika Anda mengikuti semua arahan dan belum ada hasil, kami akan berikan tambahan sesi privat sampai Anda benar-benar menguasai ilmunya.</p>
+            <div class="text-center md:text-left">
+                <h3 class="text-lg md:text-xl font-bold text-green-900">Garansi "Sampai Bisa"</h3>
+                <p class="text-xs md:text-base text-green-800 leading-relaxed">Kami berkomitmen membimbing Anda sampai closing. Jika mengikuti semua arahan dan belum ada hasil, kami berikan bimbingan intensif tambahan gratis.</p>
             </div>
         </div>
     </section>
 
-    <!-- URGENCY & FINAL CTA -->
-    <section id="daftar" class="py-24 px-4 bg-white">
-        <div class="max-w-4xl mx-auto text-center border-2 border-slate-900 rounded-[3rem] p-12 relative overflow-hidden">
-            <div class="absolute -top-10 -right-10 w-40 h-40 bg-yellow-400 rounded-full flex items-center justify-center rotate-12 font-black text-slate-900 p-4 leading-tight shadow-xl">
-                SISA <br> 5 SLOT!
+    <!-- FINAL CTA -->
+    <section id="daftar" class="py-16 md:py-24 px-4 bg-white">
+        <div class="max-w-4xl mx-auto text-center border-2 border-slate-900 rounded-3xl md:rounded-[3rem] p-6 md:p-12 relative overflow-hidden">
+            <!-- Mobile Urgency Badge -->
+            <div class="md:absolute -top-4 md:-top-10 -right-4 md:-right-10 w-24 h-24 md:w-40 md:h-40 bg-yellow-400 rounded-full flex items-center justify-center rotate-12 font-black text-slate-900 p-2 md:p-4 leading-tight shadow-xl mx-auto mb-6 md:mb-0">
+                <span class="text-xs md:text-base">SISA <br> 5 SLOT!</span>
             </div>
 
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Jangan Tunggu Sampai Terlambat</h2>
-            <p class="text-xl text-slate-600 mb-10">Pendaftaran ditutup dalam <span class="font-bold text-red-600" id="countdown">02:45:12</span> atau saat kuota 25 peserta terpenuhi.</p>
+            <h2 class="text-3xl md:text-5xl font-extrabold mb-4 md:mb-6">Gabung Sekarang</h2>
+            <p class="text-sm md:text-xl text-slate-600 mb-8 md:成就-10">Pendaftaran ditutup dalam <span class="font-bold text-red-600" id="countdown">02:45:12</span></p>
             
-            <div class="bg-slate-50 p-8 rounded-2xl mb-10 text-left">
-                <h4 class="font-bold text-lg mb-4 text-[#0B1F3A]">Yang akan Anda dapatkan setelah klik tombol:</h4>
-                <ul class="space-y-3">
-                    <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-500"></i> Form Seleksi Cepat (3 Menit)</li>
-                    <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-500"></i> Undangan Interview Online</li>
-                    <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-green-500"></i> E-Book "Digital Marketing 101" Gratis</li>
+            <div class="bg-slate-50 p-6 md:p-8 rounded-xl md:rounded-2xl mb-8 text-left">
+                <h4 class="font-bold text-sm md:text-lg mb-4 text-[#0B1F3A]">Keuntungan Daftar Hari Ini:</h4>
+                <ul class="space-y-3 text-xs md:text-sm">
+                    <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Prioritas Seleksi Admin</li>
+                    <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Undangan Interview Online</li>
+                    <li class="flex items-center gap-3"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> E-Book Marketing Gratis</li>
                 </ul>
             </div>
 
             <a href="https://wa.me/6285119901075?text=saya%20minat%20dan%20bersedia%20ikut%20program%20intership" 
                target="_blank"
-               class="inline-block w-full sm:w-auto bg-[#0B1F3A] hover:bg-slate-800 text-white px-12 py-5 rounded-2xl font-black text-2xl shadow-2xl transition-all active:scale-95 text-center">
-                DAFTAR SEKARANG JUGA!
+               class="inline-block w-full sm:w-auto bg-[#0B1F3A] hover:bg-slate-800 text-white px-8 md:px-12 py-4 md:py-5 rounded-xl md:rounded-2xl font-black text-lg md:text-2xl shadow-2xl transition-all active:scale-95 text-center">
+                KLIK DAFTAR SEKARANG
             </a>
-            <p class="mt-6 text-sm text-slate-400">Proses pendaftaran 100% Aman & Terjamin.</p>
+            <p class="mt-6 text-[10px] md:text-sm text-slate-400 uppercase tracking-widest font-bold">Pendaftaran 100% Aman</p>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-slate-950 text-slate-500 py-16 px-4 border-t border-slate-900">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 text-left">
-            <div>
+    <footer class="bg-slate-950 text-slate-500 py-12 md:py-16 px-4 border-t border-slate-900 text-center lg:text-left">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <div class="flex flex-col items-center lg:items-start">
                 <div class="flex items-center gap-2 mb-6">
                     <div class="w-8 h-8 bg-white/10 rounded flex items-center justify-center text-white font-bold">D</div>
                     <span class="font-bold text-lg text-white">Disaproplus</span>
                 </div>
-                <p class="text-sm leading-relaxed">Membangun masa depan lulusan SMK Indonesia yang lebih kompetitif melalui pendidikan berbasis industri dan pengalaman nyata.</p>
+                <p class="text-xs md:text-sm leading-relaxed max-w-sm">Membangun masa depan lulusan SMK Indonesia yang kompetitif melalui pengalaman kerja industri nyata.</p>
             </div>
             <div>
-                <h4 class="text-white font-bold mb-6">Alamat & Lokasi</h4>
-                <p class="text-sm leading-relaxed">
+                <h4 class="text-white font-bold mb-4 md:mb-6 uppercase text-xs tracking-widest">Alamat</h4>
+                <p class="text-xs md:text-sm leading-relaxed">
                     <strong>Disaproplus Office</strong><br>
                     Jalan Lahan Jati Blok H-79,<br>
                     Cijambe, Kabupaten Bandung,<br>
                     Jawa Barat, Indonesia
                 </p>
             </div>
-            <div>
-                <h4 class="text-white font-bold mb-6">Hubungi Kami</h4>
+            <div class="flex flex-col items-center lg:items-start">
+                <h4 class="text-white font-bold mb-4 md:mb-6 uppercase text-xs tracking-widest">Kontak</h4>
                 <div class="flex gap-4">
-                    <a href="https://wa.me/6285119901075" target="_blank" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-green-500 hover:text-white transition-colors"><i data-lucide="phone" class="w-5 h-5"></i></a>
-                    <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-slate-900 transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
-                    <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-slate-900 transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                    <a href="https://wa.me/6285119901075" target="_blank" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-green-500 transition-colors"><i data-lucide="phone" class="w-5 h-5"></i></a>
+                    <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-yellow-400 transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                    <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-blue-400 transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
                 </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-slate-900 text-center text-xs">
+        <div class="max-w-7xl mx-auto mt-12 md:成就-16 pt-8 border-t border-slate-900 text-[10px] md:text-xs">
             <p>&copy; 2024 Disaproplus & Arcadia Townhouse. Developing Better Future.</p>
         </div>
     </footer>
@@ -368,7 +372,7 @@
         lucide.createIcons();
 
         // Fake Countdown Timer
-        let time = 9912; // 2:45:12 in seconds
+        let time = 9912; 
         const countdownEl = document.getElementById('countdown');
         
         setInterval(() => {
